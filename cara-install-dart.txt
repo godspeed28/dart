@@ -1,0 +1,7 @@
+Install Dart SDK(Administrator):
+
+choco install dart-sdk
+
+Cek Instalasi:
+
+dart --version
