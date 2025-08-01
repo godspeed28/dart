@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 void main() {
   String firstName = 'Abe';
   String lastName;
@@ -20,4 +18,13 @@ void main() {
 
   print(array1);
   print(array2);
+
+  late var value = getValue();
+  print('Variabel sudah diinisialisasi');
+  print(value);
+}
+
+String getValue() {
+  print('getValue() dipanggil');
+  return 'Hello, World!';
 }
