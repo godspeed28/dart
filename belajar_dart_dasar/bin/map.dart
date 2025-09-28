@@ -1,8 +1,8 @@
 void main() {
   // map
   Map<String, String> person = {};
-  var products = Map<String, int>();
-  var address = <String, String>{};
+  // var products = Map<String, int>();
+  // var address = <String, String>{};
 
   // manipulasi data di map
   person['first_name'] = 'Albert';
@@ -27,6 +27,12 @@ void main() {
 
   // deklarasi map dengan inisialisasi
   var productsMap = {'apple': 1000, 'banana': 2000, 'orange': 3000};
+
+  for (var key in productsMap.keys) {
+    print('$key: ${productsMap[key]}');
+  }
+
+  print('');
 
   print(productsMap); // {apple: 1000, banana: 2000, orange: 3000}
 }
